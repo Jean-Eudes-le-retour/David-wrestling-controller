@@ -85,7 +85,6 @@ class Wrestler (Robot):
             self.backFall(t)
 
     def idle(self):
-        pass
         if self.currentMotion.isOver():
             self.state = State.WALK
 
@@ -125,3 +124,4 @@ class Wrestler (Robot):
 # create the Robot instance and run main loop
 wrestler = Wrestler()
 wrestler.run()
+
